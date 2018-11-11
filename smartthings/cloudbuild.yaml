@@ -1,7 +1,7 @@
 steps:
-  - name: gcr.io/cloud-builders/docker
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/aarch64-smartthings-mqtt-bridge', '--build-arg', 'PLATFORM=aarch64', '.']
-    waitFor: ['-']
+  # - name: gcr.io/cloud-builders/docker
+  #   args: ['build', '-t', 'gcr.io/$PROJECT_ID/aarch64-smartthings-mqtt-bridge', '--build-arg', 'PLATFORM=aarch64', '.']
+  #   waitFor: ['-']
   - name: gcr.io/cloud-builders/docker
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/amd64-smartthings-mqtt-bridge', '--build-arg', 'PLATFORM=amd64', '.']
     waitFor: ['-']
@@ -13,7 +13,7 @@ steps:
     waitFor: ['-']
 
 images:
-  - gcr.io/$PROJECT_ID/aarch64-smartthings-mqtt-bridge
+  # - gcr.io/$PROJECT_ID/aarch64-smartthings-mqtt-bridge
   - gcr.io/$PROJECT_ID/amd64-smartthings-mqtt-bridge
   - gcr.io/$PROJECT_ID/armhf-smartthings-mqtt-bridge
   - gcr.io/$PROJECT_ID/i386-smartthings-mqtt-bridge

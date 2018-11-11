@@ -4,7 +4,7 @@
     "slug": "smartthings",
     "description": "SmartThings Mqtt Bridge (https://github.com/stjohnjohnson/smartthings-mqtt-bridge)",
     "url": "https://github.com/chingor13/hassio-addons/tree/master/smartthings",
-    "image": "gcr.io/home-automation-chingr/{arch}-hassio-smartthings-mqtt-bridge",
+    "image": "chingor13/{arch}-hassio-smartthings-mqtt-bridge",
     "startup": "before",
     "boot": "auto",
     "host_network": true,
