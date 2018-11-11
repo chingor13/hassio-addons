@@ -1,0 +1,11 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/amd64-smartthings-mqtt-bridge', '.']
+
+images:
+  - gcr.io/$PROJECT_ID/amd64-smartthings-mqtt-bridge
+
+  # armhf
+  # amd64
+  # i386
+  # aarch64
