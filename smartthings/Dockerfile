@@ -1,4 +1,5 @@
-FROM homeassistant/amd64-homeassistant-base
+ARG PLATFORM=amd64
+FROM homeassistant/${PLATFORM}-homeassistant-base
 
 ENV LANG C.UTF-8
 
